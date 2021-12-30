@@ -11,9 +11,9 @@ class App extends Component {
     bad: 0,
   };
 
-  handleIncrement = (button) => {
+  handleIncrement = (feedback) => {
     this.setState((prevState) => ({
-      [button.target.id]: prevState[button.target.id] + 1,
+      [feedback]: prevState[feedback] + 1,
     }));
   };
 
